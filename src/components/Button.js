@@ -4,7 +4,7 @@ import './Button.css';
 function Button({ children }) {
 	return(
 
-        <button className="sidebar-tweet" > Tweet</button>
+        <button className="sidebar-button" > Tweet</button>
         )
 }
 

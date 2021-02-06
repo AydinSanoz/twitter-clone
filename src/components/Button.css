@@ -1,9 +1,9 @@
-.sidebar-tweet {
+.sidebar-button {
     background-color: var(--twitter-color);
     padding: 17px;
     margin-right: 20px;
     border-radius: 30px;
-    width: 230px;
+    width: 100%;
     outline: none;
     font-weight: 900 !important;
     font-size: medium;
