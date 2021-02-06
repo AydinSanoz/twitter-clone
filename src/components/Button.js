@@ -1,10 +1,8 @@
 import React from 'react';
-import './Button.css';
 
-function Button({ children }) {
+function Button({className,children}) {
 	return(
-
-        <button className="sidebar-button" > Tweet</button>
+        <button className={className} > {children}</button>
         )
 }
 

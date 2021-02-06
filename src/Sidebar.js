@@ -27,7 +27,7 @@ function Sidebar() {
 			<SidebarOption Icon={Lists} text="Lists" />
 			<SidebarOption Icon={Profile} text="Profile" />
 			<SidebarOption Icon={More} text="More" />
-			<Button />
+			<Button  className = "sidebar-button">Tweet</Button>
 		</div>
 	);
 }

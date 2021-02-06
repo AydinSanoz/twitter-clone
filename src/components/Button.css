@@ -1,4 +1,4 @@
-.sidebar-button {
+/* .sidebar-button {
     background-color: var(--twitter-color);
     padding: 17px;
     margin-right: 20px;
@@ -14,4 +14,30 @@
 
 
 
-}
+} */
+
+.button {
+    cursor: pointer;
+    background: transparent;
+    color: var(--twitter-color);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--fade) all;
+  }
+  
+  .button:hover {
+    color: var(--twitter-color);
+    background-color: var(--twitter-background);
+  }
+  
+  .fullButton {
+    width: 100% !important;
+    color: white !important;
+  }
+  
+  .xlButton {
+    height: 49px !important;
+    min-width: 47px !important;
+  }
