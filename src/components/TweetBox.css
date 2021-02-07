@@ -17,6 +17,9 @@
 	margin-left: 20px;
 	border: none;
 }
+.tweetBox-input > input:focus{
+	outline: none;
+}
 .tweetBox-button {
 	width: 80px;
 	height: 40px;
@@ -32,7 +35,10 @@
 .tweetBox-mediaContainer {
     display: flex;
 }
-.tweetBox-media {
+.tweetBox-mediaContainer>input {
 	border: none;
 	flex: 1;
+}
+.tweetBox-mediaContainer>input:focus{
+	outline: none;
 }
