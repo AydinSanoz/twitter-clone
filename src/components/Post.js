@@ -13,18 +13,18 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
 				<div className="post-header">
 					<div className="post-headerText">
 						<h3>
-							Michael Jordan{' '}
+							{displayName}{' '}
 							<span>
-								<VerifiedUser className="post_badge" />
+								<VerifiedUser className="post_badge"/>@{userName}
 							</span>
 						</h3>
 					</div>
 					<div className="post-headerDescription">
-						<p>This is the tweeter clone thais developed by react-js</p>
+						<p>{text}</p>
 					</div>
 				</div>
 				<img
-					src="https://pbs.twimg.com/media/Enf9ZmFXcAAJeaX?format=jpg&name=small"
+					src={image}
 					alt="tweet-img"
 				/>
 
