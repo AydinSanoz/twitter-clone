@@ -4,20 +4,19 @@ import {
 	TwitterTimelineEmbed,
 	TwitterShareButton,
 	TwitterTweetEmbed,
-    TwitterVideoEmbed,
-    TwitterMentionButton
+	TwitterVideoEmbed,
+	TwitterMentionButton,
 } from 'react-twitter-embed';
-import { Search } from '../../components/icons';
-import RecentTweets from "../../data/Recent"
+import SearchBox from '../../components/SearchBox';
 
 function Widgets() {
 	return (
 		<div className="widgets">
-			<div className="widgets-input">
+			<SearchBox />
+			{/* <div className="widgets-input">
 				<Search className="widgets-searchIcon" />
 				<input placeholder="Search Twitter" type="text" />
-			</div>
-			<RecentTweets />
+			</div> */}
 			<div className="widgets-container">
 				<h2>What is happening</h2>
 				<TwitterTweetEmbed tweetId="933354946111705097" />

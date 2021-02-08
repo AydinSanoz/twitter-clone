@@ -21,7 +21,13 @@
     border: 1px solid var(--twitter-background);
     padding: 15px 20px;
 }
-.feed-header >h2 {
+.feed-header > h2 {
     font-size: 20px;
     font-weight: 800;
+}
+
+@media screen and (max-width:1060px) {
+    .feed {
+        flex: 0.8;  
+    }
 }

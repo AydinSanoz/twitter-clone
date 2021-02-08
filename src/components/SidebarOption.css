@@ -9,6 +9,9 @@
 	color: var(--twitter-color);
 	transition: color 100ms easy-out;
 }
+.sidebarOption:active {
+	background-color: var(--twitter-color);
+}
 
 .sidebarOption > h2 {
 	font-weight: 800;
@@ -23,4 +26,8 @@
 	.sidebarOption > h2 {
 		display: none;
 	}
+	.sidebarOption > svg {
+		font-size: 30px;
+	}
+
 }
