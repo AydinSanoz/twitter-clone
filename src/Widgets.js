@@ -8,6 +8,7 @@ import {
     TwitterMentionButton
 } from 'react-twitter-embed';
 import { Search } from './components/icons';
+import RecentTweets from "./data/Recent"
 
 function Widgets() {
 	return (
@@ -16,6 +17,7 @@ function Widgets() {
 				<Search className="widgets-searchIcon" />
 				<input placeholder="Search Twitter" type="text" />
 			</div>
+			<RecentTweets />
 			<div className="widgets-container">
 				<h2>What is happening</h2>
 				<TwitterTweetEmbed tweetId="933354946111705097" />

@@ -1,21 +1,29 @@
-import { VerifiedUser, ChatBubbleOutline, Repeat, FavoriteBorder, Publish } from '@material-ui/icons';
+import {
+	VerifiedUser,
+	ChatBubbleOutline,
+	Repeat,
+	FavoriteBorder,
+	Publish,
+} from '@material-ui/icons';
 import React from 'react';
 import Avatar from './Avatar';
 import './Post.css';
 
-function Post({ displayName, userName, verified, text, image, avatar }) {
+function Post({tweet, avatar,datetime,id,name,slug,text,like,reply,retweet,tweet_img }) {
+	console.log("name",tweet)
+
 	return (
 		<div className="post">
 			<div className="post-avatar">
-				<Avatar />
+				<Avatar avatar={avatar}/>
 			</div>
 			<div className="post-body">
 				<div className="post-header">
 					<div className="post-headerText">
 						<h3>
-							{displayName}{' '}
+							{name}{' '}
 							<span>
-								<VerifiedUser className="post_badge"/>@{userName}
+								<VerifiedUser className="post_badge" />@{slug}
 							</span>
 						</h3>
 					</div>
@@ -23,10 +31,7 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
 						<p>{text}</p>
 					</div>
 				</div>
-				<img
-					src={image}
-					alt="tweet-img"
-				/>
+				<img src={tweet_img} alt="tweet-img" />
 
 				<div className="post-footer">
 					<ChatBubbleOutline fontSize="small" />
