@@ -1,5 +1,6 @@
 .search {
 	flex: 0.25;
+    position: sticky;
 }
 .search-input {
 	display: flex;
