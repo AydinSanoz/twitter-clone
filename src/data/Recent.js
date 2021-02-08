@@ -6,7 +6,7 @@ import db from '../firebase';
 const RecentTweets = (props) => {
 	const feedRecentTweets = (e) => {
 		e.preventDefault();
-		data.map((tweet) => db.collection('posts').add({tweet}));
+		data.map((tweet) => db.collection('posts').add(tweet));
 		;
 	};
 	return (
