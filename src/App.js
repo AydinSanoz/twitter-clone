@@ -1,17 +1,25 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Widgets from './Widgets';
+import Sidebar from './pages/sections/Sidebar';
+import Home from './pages/Home';
+import Explore from './pages/Explore';
+import Error from './pages/Error'
+import Widgets from './pages/sections/Widgets';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
 	return (
-		//BEM
 		<div className="app">
-			{/* <h1>Welcome to my twitter clone </h1> */}
-			<Sidebar />
-      <Feed />
-      <Widgets/>
+			<Router>
+				<Sidebar />
+				<Switch>
+					<Route path="/Home" component={Home} exact/>
+					<Route path="/Explore" component={Explore} exact/>
+					<Route path="" component={Error} />
+
+				</Switch>
+				<Widgets />
+			</Router>
 		</div>
 	);
 }

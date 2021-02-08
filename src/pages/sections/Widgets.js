@@ -7,8 +7,8 @@ import {
     TwitterVideoEmbed,
     TwitterMentionButton
 } from 'react-twitter-embed';
-import { Search } from './components/icons';
-import RecentTweets from "./data/Recent"
+import { Search } from '../../components/icons';
+import RecentTweets from "../../data/Recent"
 
 function Widgets() {
 	return (

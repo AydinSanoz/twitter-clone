@@ -9,9 +9,7 @@ import React from 'react';
 import Avatar from './Avatar';
 import './Post.css';
 
-function Post({tweet, avatar,datetime,id,name,slug,text,like,reply,retweet,tweet_img }) {
-	console.log("name",tweet)
-
+function Post({avatar,datetime,id,name,slug,text,like,reply,retweet,tweet_img }) {
 	return (
 		<div className="post">
 			<div className="post-avatar">

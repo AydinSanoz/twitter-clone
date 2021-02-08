@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 
-import SidebarOption from './components/SidebarOption';
+import SidebarOption from '../../components/SidebarOption';
 import {
 	Twitter,
 	Home,
@@ -12,14 +12,14 @@ import {
 	Lists,
     Profile,
     More,
-} from './components/icons';
-import Button from './components/Button';
+} from '../../components/icons';
+import Button from '../../components/Button';
 
 function Sidebar() {
 	return (
 		<div className="sidebar">
 			<Twitter className="sidebar-twitterIcon" />
-			<SidebarOption Icon={Home} text="Home" />
+			<SidebarOption Icon={Home} text="Home"/>
 			<SidebarOption Icon={Search} text="Explore" />
 			<SidebarOption Icon={Notification} text="Notifications" />
 			<SidebarOption Icon={Messages} text="Messages" />
