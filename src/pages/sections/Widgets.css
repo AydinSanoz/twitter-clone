@@ -1,6 +1,14 @@
 .widgets {
 	flex: 0.25;
 }
+.widgets-header{
+    height: 70px;
+    position: sticky;
+    top : 0;
+    background-color:white;
+    border: 1px solid var(--twitter-background);
+}
+
 .widgets-input {
 	display: flex;
 	align-items: center;

@@ -12,11 +12,9 @@ import SearchBox from '../../components/SearchBox';
 function Widgets() {
 	return (
 		<div className="widgets">
-			<SearchBox />
-			{/* <div className="widgets-input">
-				<Search className="widgets-searchIcon" />
-				<input placeholder="Search Twitter" type="text" />
-			</div> */}
+			<div className="widgets-header">
+				<SearchBox />
+			</div>
 			<div className="widgets-container">
 				<h2>What is happening</h2>
 				<TwitterTweetEmbed tweetId="933354946111705097" />
