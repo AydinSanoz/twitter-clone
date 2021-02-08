@@ -13,8 +13,8 @@ function TweetBox() {
 
 		db.collection('posts').add({
 			id: Math.random(),
-			name: 'Kronos',
-			slug: 'KronosHaber',
+			name: 'carpediem',
+			slug: 'aydinsanoz2',
 			avatar_img:
 				'https://pbs.twimg.com/profile_images/826041320192012288/dtLfHPMc_400x400.jpg',
 
@@ -26,9 +26,9 @@ function TweetBox() {
 				retweet: 120,
 				like: 20,
 			},
-		})
-		setTweetMessage("")
-		setTweetImage("")
+		});
+		setTweetMessage('');
+		setTweetImage('');
 	};
 
 	return (
@@ -45,7 +45,7 @@ function TweetBox() {
 				</div>
 				<div className="tweetBox-mediaContainer">
 					<input
-						placeholder="optional enter image Url"
+						// placeholder="optional enter image Url"
 						type="text"
 						value={tweetImage}
 						onChange={(e) => setTweetImage(e.target.value)}
