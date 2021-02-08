@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Avatar from './Avatar';
 import Button from './Button';
 import './TweetBox.css';
-import db from '../firebase';
+import db from '../firebase/firebase';
 
 function TweetBox() {
 	const [tweetMessage, setTweetMessage] = useState('');

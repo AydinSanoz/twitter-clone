@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Post from './Post';
 import './Feed.css';
-import db from '../firebase';
+import firebase from '../firebase/firebase';
 
 function Feed() {
 	const [posts, setPosts] = useState([]);
+	const db = firebase.db
 
 	useEffect(() => {
 		db.collection('posts')
