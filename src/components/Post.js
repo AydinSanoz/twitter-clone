@@ -29,7 +29,7 @@ function Post({avatar,datetime,id,name,slug,text,like,reply,retweet,tweet_img })
 						<p>{text}</p>
 					</div>
 				</div>
-				<img src={tweet_img} alt="tweet-img" />
+				<img src={tweet_img || 'https://pbs.twimg.com/media/EnfWIoiW4AUz2Ww?format=png&name=small'} alt="tweet-img" />
 
 				<div className="post-footer">
 					<ChatBubbleOutline fontSize="small" />
