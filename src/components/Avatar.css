@@ -4,9 +4,24 @@
 }
 
 .avatar-img {
-	width: 100%;
+	width: 47px;
+	height: 47px;
 	display: block;
 	border-radius: 50%;
 	border: 2px solid var(--twitter-background);
 	text-align: center;
+}
+
+.avatar-img-large {
+	width: 140px;
+    height: 140px;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+.avatar-img-large:hover{
+	filter: contrast(0.5);
 }

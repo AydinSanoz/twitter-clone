@@ -2,6 +2,7 @@ import React, { useContext} from 'react';
 import Sidebar from '../pages/sections/Sidebar';
 import Home from '../pages/Home';
 import Explore from '../pages/Explore';
+import Profile from '../pages/Profile';
 import Error from '../pages/Error';
 import Widgets from '../pages/sections/Widgets';
 import {
@@ -29,7 +30,7 @@ function Main() {
 				<Route path="/Messages" component={Error} />
 				<Route path="/Bookmarks" component={Error} />
 				<Route path="/Lists" component={Error} />
-				<Route path="/Profile" component={Error} />
+				<Route path="/Profile" component={Profile} />
 				<Route path="/More" component={Error} />
 				<Route path="" component={Home} />
 			</Switch>
