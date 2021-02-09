@@ -3,14 +3,14 @@ import firebase from "../firebase/firebase";
 
 export const FirebaseAuthContext = createContext();
 
-function AuthContextProvider = (props) =>{
-    const [currentUser, setcurrentUser] = useState("")
+function AuthContextProvider(props){
+    const [currentUser, setCurrentUser] = useState("")
 
     useEffect(()=>{
-        firebase.firebaseAuth.onAuthStateChanged((user)=>setcurrentUser(user))
+        firebase.firebaseAuth.onAuthStateChanged((user)=>setCurrentUser(user))
     },[])
     return(
-        <FirebaseAuthContext.Provider value = {currentUser}>
+        <FirebaseAuthContext.Provider value = {{currentUser}}>
             {props.children}
         </FirebaseAuthContext.Provider>
     )

@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Avatar from './Avatar';
 import Button from './Button';
 import './TweetBox.css';
-import db from '../firebase/firebase';
+import firebase from '../firebase/firebase';
 
 function TweetBox() {
 	const [tweetMessage, setTweetMessage] = useState('');
 	const [tweetImage, setTweetImage] = useState('');
+	const db = firebase.db
 
 	const sendTweet = (e) => {
 		e.preventDefault();
