@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import './Sidebar.css';
 import firebase from '../../firebase/firebase';
-import {FirebaseAuthContext} from "../../context/AuthContext"
+import { FirebaseAuthContext } from '../../context/AuthContext';
 
 import SidebarOption from '../../components/SidebarOption';
 import {
@@ -16,19 +16,17 @@ import {
 	More,
 } from '../../components/icons';
 import Button from '../../components/Button';
-import { Avatar } from '@material-ui/core';
-import {useHistory} from "react-router-dom";
+import Avatar from '../../components/Avatar';
+import { useHistory } from 'react-router-dom';
 
 function Sidebar() {
-	const history = useHistory()
-	const {currentUser} = useContext(FirebaseAuthContext)
-    console.log("🚀 ~ file: Sidebar.js ~ line 25 ~ Sidebar ~ currentUser", currentUser)
-	
+	const history = useHistory();
+	const { currentUser } = useContext(FirebaseAuthContext);
+	const userName = currentUser.email.split('@');
 
 	function signOut() {
 		firebase.signOut();
-		history.push("/")
-
+		history.push('/');
 	}
 	return (
 		<div className="sidebar">
@@ -45,10 +43,10 @@ function Sidebar() {
 				<Button className="sidebar-button">Tweet</Button>
 			</div>
 			<div className="dashboard" onClick={signOut}>
-				<Avatar className="dashboard-avatar" />
-				<div className="dashboard-text" >
+				<Avatar avatar={currentUser.photoURL} />
+				<div className="dashboard-text">
 					<h3 className="dashboard-displayName">{currentUser.displayName}</h3>
-					<h4 className="dashboard-userName">{currentUser.email}</h4>
+					<h4 className="dashboard-userName">@{userName[0]}</h4>
 					<p>Logout</p>
 				</div>
 			</div>
