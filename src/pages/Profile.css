@@ -1,0 +1,10 @@
+.profile-img {
+    background-color: #C4CFD6;
+    height: 25vh;
+    width: 100%;
+}
+.profile-img-box{
+    border-bottom: 1px solid var(--twitter-background);
+    height: 290px;
+}
+
