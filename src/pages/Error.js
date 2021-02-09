@@ -10,7 +10,7 @@ function Home() {
 				<h2>Sorry Not Ready  </h2>
 			</div>
             <div className="img">
-                <img src= {error} alt="error" width= "500px"/>
+                <img src= {error} alt="error" width= "500px" style= {{backgroundColor: 'red', minWidth : '-webkit-fill-available'}} />
             </div>
 		</div>
 	);

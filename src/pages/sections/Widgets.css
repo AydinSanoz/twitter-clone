@@ -38,3 +38,8 @@
 		display: none;
 	}
 }
+@media screen and (max-width: 1260px) {
+	.widgets {
+		flex : 0.25
+	}
+}

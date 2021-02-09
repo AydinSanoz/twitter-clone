@@ -28,6 +28,11 @@
 
 @media screen and (max-width:1060px) {
     .feed {
-        flex: 0.8;  
+        flex: 0.95 !important;  
+    }
+}
+@media screen and (max-width:1260px) {
+    .feed {
+        flex: 0.7;  
     }
 }
