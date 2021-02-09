@@ -1,0 +1,8 @@
+.welcome-body {
+    width: 100%vw;
+    background-color: var(--twitter-color);
+}
+.welcome {
+    margin: auto;
+    background-color: var(--twitter-background);
+}
