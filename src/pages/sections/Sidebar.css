@@ -37,7 +37,7 @@
 .dashboard {
 	width: 50%;
 	display: flex;
-	align-self: flex-end;
+	align-self: center;
 	margin-bottom: 20px;
 	justify-content: space-around;
 }

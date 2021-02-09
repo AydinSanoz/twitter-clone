@@ -1,8 +1,21 @@
 .welcome-body {
-    width: 100%vw;
-    background-color: var(--twitter-color);
+	width: 100%vw;
+	background-color: var(--twitter-color);
+	margin:0px;
+    display: contents;
+    
+}
+.twit-logo{
+    flex: 0.5;
+    background-image: url("../assets/twit/d.png"), url("../assets/twit/a.jpeg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    background-repeat: no-repeat;
 }
 .welcome {
-    margin: auto;
-    background-color: var(--twitter-background);
+    flex: 0.5;
+    background-image: linear-gradient(90deg, #6CF8FC , transparent);
+
 }
