@@ -17,7 +17,7 @@ function Feed() {
 				console.log('snapshot', snapshot.docs);
 				setPosts(snapshot.docs.map((doc) => doc.data()));
 			});
-	}, []);
+	}, [currentUser.uid, db]);
 	return (
 		<div className="feed">
 			{console.log('posts', posts)}
