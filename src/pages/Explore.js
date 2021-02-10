@@ -3,7 +3,7 @@ import Feed from '../components/Feed';
 import SearchBox from '../components/SearchBox';
 import { data } from '../data/index';
 import Post from '../components/Post';
-import FeedLayout from '../components/FeedLayout';
+import FeedLayout from '../Layouts/FeedLayout';
 
 function Explore() {
 	useEffect(() => {}, []);

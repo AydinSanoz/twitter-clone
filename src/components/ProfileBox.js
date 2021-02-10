@@ -3,8 +3,7 @@ import { FirebaseAuthContext } from '../context/AuthContext';
 import './ProfileBox.css';
 import Avatar from './Avatar';
 import { SvgChart } from './icons';
-import ProfileNavbar from './ProfileNavbar';
-
+import ProfileNavbar from './ProfileNavbarItem';
 
 function Profile() {
 	const { currentUser } = useContext(FirebaseAuthContext);
@@ -36,12 +35,12 @@ function Profile() {
 					<b>0</b>Following <b>5</b> Following{' '}
 				</p>
 			</div>
-				<div className="profile-navbar-container">
-					<ProfileNavbar text="Tweets" />
-					<ProfileNavbar text="Tweets & Replies" />
-					<ProfileNavbar text="Media" />
-					<ProfileNavbar text="Likes" />
-				</div>
+			<div className="profile-navbar-container">
+				<ProfileNavbar text="Tweets" />
+				<ProfileNavbar text="Tweets & Replies" />
+				<ProfileNavbar text="Media" />
+				<ProfileNavbar text="Likes" />
+			</div>
 		</div>
 	);
 }

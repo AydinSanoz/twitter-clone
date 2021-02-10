@@ -4,10 +4,7 @@ import {
 	TwitterTimelineEmbed,
 	TwitterShareButton,
 	TwitterTweetEmbed,
-	TwitterVideoEmbed,
-	TwitterMentionButton,
 } from 'react-twitter-embed';
-import {Analytics, ArrowBottom,BigTweet,Bookmark,SvgChart,Emoji,Explore,Gif,Like,Moments,More,More2,Topics,Tweet, Twitter, Share} from "./icons";
 import SearchBox from './SearchBox';
 
 function Widgets() {

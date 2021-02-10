@@ -1,21 +1,21 @@
 .search {
 	flex: 0.25;
-    position: sticky;
+	position: sticky;
 }
 .search-input {
 	display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--twitter-background);
-    margin-top: 10px;
-    margin-left: 20px;
-    border-radius: 20px;
+	align-items: center;
+	padding: 10px;
+	background-color: var(--twitter-background);
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 20px;
 }
-.search-input >input {
+.search-input > input {
 	border: none;
-    background-color: var(--twitter-background);
+	background-color: var(--twitter-background);
 }
-.search-input >input:focus {
+.search-input > input:focus {
 	outline: none;
 }
 .search-searchIcon {

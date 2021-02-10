@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
 import Post from './Post';
-import './Feed.css';
 import firebase from '../firebase/firebase';
 import { FirebaseAuthContext } from '../context/AuthContext';
-import FeedLayout from './FeedLayout';
+import FeedLayout from '../Layouts/FeedLayout';
 import FlipMove from 'react-flip-move';
 
 function Feed() {
@@ -21,10 +20,10 @@ function Feed() {
 	}, [currentUser.uid, db]);
 	return (
 		<FeedLayout>
-			{posts.map((tweet) => (
-				<FlipMove>
+			<FlipMove>
+				{posts.map((tweet) => (
 					<Post
-						key = {tweet.uid}
+						key={tweet.id}
 						avatar={tweet.avatar_img}
 						datetime={tweet.datetime}
 						uid={tweet.uid}
@@ -36,8 +35,8 @@ function Feed() {
 						// retweet= {tweet.textInfo.retweet}
 						tweet_img={tweet.tweet_img}
 					/>
-				</FlipMove>
-			))}
+				))}
+			</FlipMove>
 		</FeedLayout>
 	);
 }

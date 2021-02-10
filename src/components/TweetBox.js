@@ -19,6 +19,7 @@ function TweetBox() {
 	const sendTweet = (e) => {
 		e.preventDefault();
 		db.collection('posts').add({
+			id: Math.random(),
 			uid: currentUser.uid,
 			name: currentUser.displayName,
 			slug: userName[0],

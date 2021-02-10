@@ -1,7 +1,6 @@
 import React from 'react';
-import '../components/Feed.css';
 import error from '../assets/Under-Construction.png';
-import FeedLayout from '../components/FeedLayout';
+import FeedLayout from '../Layouts/FeedLayout';
 
 function Error() {
 	return (

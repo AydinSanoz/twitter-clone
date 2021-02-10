@@ -3,14 +3,13 @@ import Sidebar from '../components/Sidebar';
 import Home from '../pages/Home';
 import Explore from '../pages/Explore';
 import Profile from '../pages/Profile';
-
 import Error from '../pages/Error';
 import ProfileTweets from '../pages/ProfileTweet';
 import ProfileError from '../pages/ProfileError';
 import Widgets from '../components/Widgets';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { FirebaseAuthContext } from '../context/AuthContext';
-import Welcome from '../pages/Welcome';
+import Welcome from './Welcome';
 
 function Main() {
 	const { currentUser } = useContext(FirebaseAuthContext);

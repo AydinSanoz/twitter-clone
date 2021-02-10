@@ -14,11 +14,13 @@ import {
 	Lists,
 	Profile,
 	More,
-	Tweet
+	Tweet,
 } from './icons';
 import Button from './Button';
 import Avatar from './Avatar';
 import { useHistory } from 'react-router-dom';
+import Dashboard from '../components/Dashboard';
+import SidebarLayout from '../Layouts/SidebarLayout';
 
 function Sidebar() {
 	const history = useHistory();
@@ -30,7 +32,7 @@ function Sidebar() {
 		history.push('/');
 	}
 	return (
-		<div className="sidebar">
+		<SidebarLayout>
 			<div className="sidebar-main">
 				<Twitter className="sidebar-twitterIcon" />
 				<SidebarOption Icon={Home} text="Home" />
@@ -41,17 +43,13 @@ function Sidebar() {
 				<SidebarOption Icon={Lists} text="Lists" />
 				<SidebarOption Icon={Profile} text="Profile" />
 				<SidebarOption Icon={More} text="More" />
-				<Button className="sidebar-button"><Tweet/></Button>
+				<Button className="sidebar-button" >
+					<Tweet />
+					<h4>Tweet</h4>
+				</Button>
 			</div>
-			<div className="dashboard" onClick={signOut}>
-				<Avatar avatar={currentUser.photoURL} />
-				<div className="dashboard-text">
-					<h3 className="dashboard-displayName">{currentUser.displayName}</h3>
-					<h4 className="dashboard-userName">@{userName[0]}</h4>
-					<p>Logout</p>
-				</div>
-			</div>
-		</div>
+			<Dashboard />
+		</SidebarLayout>
 	);
 }
 

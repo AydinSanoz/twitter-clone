@@ -1,8 +1,7 @@
 import React from 'react';
 import TweetBox from '../components/TweetBox';
 import Feed from '../components/Feed';
-import '../components/Feed.css';
-import FeedLayout from '../components/FeedLayout';
+import FeedLayout from '../Layouts/FeedLayout';
 
 function Home() {
 	return (
