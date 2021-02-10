@@ -1,14 +1,11 @@
 import React from 'react';
-import TweetBox from '../components/TweetBox';
 import '../components/Feed.css';
 import error from '../assets/Under-Construction.png';
+import FeedLayout from '../components/FeedLayout';
 
-function Error({ text }) {
+function Error() {
 	return (
-		<div className="feed">
-			<div className="feed-header">
-				<h2>Sorry Not Ready </h2>
-			</div>
+		<FeedLayout title = "Sorry Not Ready">
 			<div className="img">
 				<img
 					src={error}
@@ -17,7 +14,7 @@ function Error({ text }) {
 					style={{ backgroundColor: 'red', minWidth: '-webkit-fill-available' }}
 				/>
 			</div>
-		</div>
+		</FeedLayout>
 	);
 }
 

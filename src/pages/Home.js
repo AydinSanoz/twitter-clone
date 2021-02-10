@@ -1,17 +1,15 @@
 import React from 'react';
 import TweetBox from '../components/TweetBox';
-import Feed from "../components/Feed"
+import Feed from '../components/Feed';
 import '../components/Feed.css';
+import FeedLayout from '../components/FeedLayout';
 
 function Home() {
 	return (
-		<div className="feed">
-			<div className="feed-header">
-				<h2>Home</h2>
-			</div>
+		<FeedLayout title = "Home">
 			<TweetBox />
 			<Feed />
-		</div>
+		</FeedLayout>
 	);
 }
 

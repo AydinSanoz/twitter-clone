@@ -4,6 +4,7 @@ import ProfileBox from '../components/ProfileBoxComp';
 import './Profile.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Feed from '../components/Feed';
+import FeedLayout from '../components/FeedLayout';
 
 function ProfileTweets() {
 	const { currentUser } = useContext(FirebaseAuthContext);
@@ -12,13 +13,10 @@ function ProfileTweets() {
 	console.log('current', currentUser);
 
 	return (
-		<div className="feed">
-			<div className="feed-header">
-				<h2>Profile</h2>
-			</div>
+		<FeedLayout title = "Profile">
 			<ProfileBox />
 			<Feed />
-		</div>
+		</FeedLayout>
 	);
 }
 

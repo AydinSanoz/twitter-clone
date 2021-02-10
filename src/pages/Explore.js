@@ -1,22 +1,21 @@
 import React, { useEffect } from 'react';
 import Feed from '../components/Feed';
-import TweetBox from '../components/TweetBox';
 import SearchBox from '../components/SearchBox';
-import {data} from '../data/index';
+import { data } from '../data/index';
 import Post from '../components/Post';
+import FeedLayout from '../components/FeedLayout';
 
 function Explore() {
-	useEffect(() => {
-		
-	}, []);
+	useEffect(() => {}, []);
 
 	return (
-		<div className="feed">
+		<FeedLayout >
 			<div className="feed-header">
-				<h2>Explore</h2>
+				{/* <h2>Explore</h2> */}
 				<SearchBox />
 			</div>
-			{data.map(tweet=><Post
+			{data.map((tweet) => (
+				<Post
 					avatar={tweet.avatar_img}
 					datetime={tweet.datetime}
 					id={tweet.id}
@@ -27,10 +26,11 @@ function Explore() {
 					// reply= {tweet.textInfo.reply}
 					// retweet= {tweet.textInfo.retweet}
 					tweet_img={tweet.tweet_img}
-				/>)}
-			
+				/>
+			))}
+
 			<Feed />
-		</div>
+		</FeedLayout>
 	);
 }
 

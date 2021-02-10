@@ -1,38 +1,15 @@
-.feed {
+/* .feed {
     flex: 0.5;
     border-right: 1px solid var(--twitter-background);
     min-width: 520px;
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
 }
 
 .feed::-webkit-scrollbar {
     display: none;
-}
-.feed {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
+} */
 
-.feed-header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 100;
-    border: 1px solid var(--twitter-background);
-    padding: 15px 20px;
-}
-.feed-header > h2 {
-    font-size: 20px;
-    font-weight: 800;
-}
 
-@media screen and (max-width:1060px) {
-    .feed {
-        flex: 0.95 !important;  
-    }
-}
-@media screen and (max-width:1260px) {
-    .feed {
-        flex: 0.7;  
-    }
-}

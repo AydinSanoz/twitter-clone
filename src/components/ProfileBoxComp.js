@@ -23,10 +23,10 @@ function Profile() {
 				</div>
 			</div>
 			<div className="profile-data">
-				<h2 className="profile-name">
+				<h3 className="profile-name">
 					{userName[0].charAt(0).toUpperCase() +
 						userName[0].slice(1).toLowerCase()}
-				</h2>
+				</h3>
 				<p className="profile-displayName">{currentUser.displayName}</p>
 				<div className="profile-calender">
 					<SvgChart />
@@ -35,13 +35,13 @@ function Profile() {
 				<p className="profile-follewers">
 					<b>0</b>Following <b>5</b> Following{' '}
 				</p>
+			</div>
 				<div className="profile-navbar-container">
 					<ProfileNavbar text="Tweets" />
 					<ProfileNavbar text="Tweets & Replies" />
 					<ProfileNavbar text="Media" />
 					<ProfileNavbar text="Likes" />
 				</div>
-			</div>
 		</div>
 	);
 }

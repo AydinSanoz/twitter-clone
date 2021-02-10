@@ -11,6 +11,7 @@
     flex-direction: row;
     display: flex;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 .profile-navbar-container{
     display: flex;
@@ -18,5 +19,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 10px solid var(--twitter-background);
+}
+.profile-follewers{
+    margin-top: 10px;
+}
+.profile-data > * {
+    margin-left: 20px;
 }
 
