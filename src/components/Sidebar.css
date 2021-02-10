@@ -8,30 +8,7 @@
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
-/* .sidebar-button {
-	background-color: var(--twitter-color);
-	padding: 20px;
-	margin-right: 20px;
-	border-radius: 30px;
-	width: 95%;
-	outline: none;
-	font-weight: 900px;
-	font-size: medium;
-	border: none;
-	color: white;
-	text-transform: inherit;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-.sidebar-button:hover {
-	background-color: var(--twitter-background);
-	border-radius: 30px;
-	color: var(--twitter-color);
-	transition: color 100ms easy-out;
-}
-.sidebar-button:active {
-	background-color: var(--twitter-color);
-} */
+
 @media screen and (max-width: 1260px) {
 	.sidebar-button {
 		border-radius: 50%;

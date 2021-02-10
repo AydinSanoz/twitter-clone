@@ -21,18 +21,6 @@
 .tweetBox-input > input:focus{
 	outline: none;
 }
-/* .tweetBox-button {
-	width: 80px;
-	height: 40px;
-	background-color: var(--twitter-color);
-	border: none;
-	color: white;
-	border-radius: 30px;
-	text-transform: inherit;
-	font-weight: 900;
-	outline: none;
-
-} */
 .tweetBox-mediaContainer {
     display: flex;
 }
