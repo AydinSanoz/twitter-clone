@@ -1,0 +1,22 @@
+.profile-img {
+    background-color: #C4CFD6;
+    height: 25vh;
+    width: 100%;
+}
+.profile-img-box{
+    border-bottom: 1px solid var(--twitter-background);
+    height: 290px;
+}
+.profile-calender{
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+.profile-navbar-container{
+    display: flex;
+    color: var(--twitter-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 10px solid var(--twitter-background);
+}
+
