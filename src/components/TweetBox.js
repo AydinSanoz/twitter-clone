@@ -3,15 +3,18 @@ import Avatar from './Avatar';
 import Button from './Button';
 import './TweetBox.css';
 import firebase from '../firebase/firebase';
-import {FirebaseAuthContext} from "../context/AuthContext";
+import { FirebaseAuthContext } from '../context/AuthContext';
 
 function TweetBox() {
 	const [tweetMessage, setTweetMessage] = useState('');
 	const [tweetImage, setTweetImage] = useState('');
-	const {currentUser} =  useContext(FirebaseAuthContext)
-    console.log("🚀 ~ file: TweetBox.js ~ line 12 ~ TweetBox ~ currentUser", currentUser.uid)
-	const userName = currentUser.email.split('@')
-	const db = firebase.db
+	const { currentUser } = useContext(FirebaseAuthContext);
+	console.log(
+		'🚀 ~ file: TweetBox.js ~ line 12 ~ TweetBox ~ currentUser',
+		currentUser.photoURL
+	);
+	const userName = currentUser.email.split('@');
+	const db = firebase.db;
 
 	const sendTweet = (e) => {
 		e.preventDefault();
@@ -19,9 +22,7 @@ function TweetBox() {
 			uid: currentUser.uid,
 			name: currentUser.displayName,
 			slug: userName[0],
-			avatar_img:
-				'https://pbs.twimg.com/profile_images/826041320192012288/dtLfHPMc_400x400.jpg',
-
+			avatar_img: currentUser.photoURL,
 			datetime: new Date(),
 			text: tweetMessage,
 			tweet_img: tweetImage,
@@ -39,7 +40,7 @@ function TweetBox() {
 		<div className="tweetBox">
 			<form>
 				<div className="tweetBox-input">
-					<Avatar avatar = {currentUser.photoURL}/>
+					<Avatar avatar={currentUser.photoURL} />
 					<input
 						placeholder="What is Happenning"
 						type="text"
