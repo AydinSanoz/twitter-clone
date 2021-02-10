@@ -25,7 +25,7 @@ function Feed() {
 				<Post
 					avatar={tweet.avatar_img}
 					datetime={tweet.datetime}
-					id={tweet.id}
+					uid={tweet.uid}
 					name={tweet.name}
 					slug={tweet.slug}
 					text={tweet.text}
