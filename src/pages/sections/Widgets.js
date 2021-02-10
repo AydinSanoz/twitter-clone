@@ -7,6 +7,7 @@ import {
 	TwitterVideoEmbed,
 	TwitterMentionButton,
 } from 'react-twitter-embed';
+import {Analytics, ArrowBottom,BigTweet,Bookmark,SvgChart,Emoji,Explore,Gif,Like,Moments,More,More2,Topics,Tweet, Twitter, Share} from "../../components/icons";
 import SearchBox from '../../components/SearchBox';
 
 function Widgets() {
@@ -27,8 +28,25 @@ function Widgets() {
 					url={'https://facebook.com/saurabhnemade'}
 					options={{ text: '#reactjs is awesome', via: 'saurabhnemade' }}
 				/>
-				<TwitterVideoEmbed id={'560070183650213889'} />
-				<TwitterMentionButton screenName={'saurabhnemade'} />
+				<Analytics />
+				<ArrowBottom />
+				<Like />
+				<Emoji />
+				<SvgChart />
+				<BigTweet />
+				<Bookmark />
+				<Explore />
+				<Gif />
+				<Moments/>
+				<More/>
+				<More2/>
+				<Topics/>
+				<Tweet/>
+				<Twitter/>
+				<Share/>
+
+				{/* <TwitterVideoEmbed id={'560070183650213889'} />
+				<TwitterMentionButton screenName={'saurabhnemade'} /> */}
 			</div>
 		</div>
 	);

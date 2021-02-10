@@ -33,6 +33,15 @@
 	margin-top: 20px;
 	margin-left: 20px;
 }
+.sidebar-button:hover {
+	background-color: var(--twitter-background);
+	border-radius: 30px;
+	color: var(--twitter-color);
+	transition: color 100ms easy-out;
+}
+.sidebar-button:active {
+	background-color: var(--twitter-color);
+}
 
 .dashboard {
 	width: 70%;
@@ -40,6 +49,15 @@
 	align-self: center;
 	margin-bottom: 20px;
 	justify-content: space-around;
+}
+.dashboard:hover {
+	background-color: var(--twitter-background);
+	border-radius: 30px;
+	color: var(--twitter-color);
+	transition: color 100ms easy-out;
+}
+.dashboard:active {
+	background-color: var(--twitter-color);
 }
 
 @media screen and (max-width: 1260px) {
@@ -62,4 +80,3 @@
 		display: none;
 	}
 }
-

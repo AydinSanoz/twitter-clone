@@ -14,6 +14,7 @@ import {
 	Lists,
 	Profile,
 	More,
+	Tweet
 } from '../../components/icons';
 import Button from '../../components/Button';
 import Avatar from '../../components/Avatar';
@@ -40,7 +41,7 @@ function Sidebar() {
 				<SidebarOption Icon={Lists} text="Lists" />
 				<SidebarOption Icon={Profile} text="Profile" />
 				<SidebarOption Icon={More} text="More" />
-				<Button className="sidebar-button">Tweet</Button>
+				<Button className="sidebar-button"><Tweet/></Button>
 			</div>
 			<div className="dashboard" onClick={signOut}>
 				<Avatar avatar={currentUser.photoURL} />
