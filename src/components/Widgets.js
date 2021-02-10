@@ -28,25 +28,6 @@ function Widgets() {
 					url={'https://facebook.com/saurabhnemade'}
 					options={{ text: '#reactjs is awesome', via: 'saurabhnemade' }}
 				/>
-				<Analytics />
-				<ArrowBottom />
-				<Like />
-				<Emoji />
-				{/* <SvgChart /> */}
-				<BigTweet />
-				<Bookmark />
-				<Explore />
-				<Gif />
-				<Moments/>
-				<More/>
-				<More2/>
-				<Topics/>
-				<Tweet/>
-				<Twitter/>
-				<Share/>
-
-				{/* <TwitterVideoEmbed id={'560070183650213889'} />
-				<TwitterMentionButton screenName={'saurabhnemade'} /> */}
 			</div>
 		</div>
 	);

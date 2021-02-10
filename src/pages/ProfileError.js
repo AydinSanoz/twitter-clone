@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FirebaseAuthContext } from '../context/AuthContext';
-import ProfileBox from '../components/ProfileBoxComp';
+import ProfileBox from '../components/ProfileBox';
 import Error from './Error';
 import './Profile.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';

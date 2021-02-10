@@ -28,8 +28,6 @@ function Explore() {
 					tweet_img={tweet.tweet_img}
 				/>
 			))}
-
-			<Feed />
 		</FeedLayout>
 	);
 }

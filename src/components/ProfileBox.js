@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FirebaseAuthContext } from '../context/AuthContext';
-import './ProfileBoxComp.css';
+import './ProfileBox.css';
 import Avatar from './Avatar';
 import { SvgChart } from './icons';
 import ProfileNavbar from './ProfileNavbar';

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FirebaseAuthContext } from '../context/AuthContext';
-import ProfileBox from '../components/ProfileBoxComp';
+import ProfileBox from '../components/ProfileBox';
 import FeedLayout from '../components/FeedLayout';
 
 function Profile() {
