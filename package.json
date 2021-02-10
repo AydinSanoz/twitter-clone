@@ -1,7 +1,7 @@
 {
   "name": "twitter-clone",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
@@ -12,6 +12,7 @@
     "formik": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-flip-move": "^3.0.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "react-twitter-embed": "^3.0.3",
@@ -22,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "init": "firebase init"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "twitter-clone",
+  "main": "index.js",
+  "repository": "https://github.com/AydinSanoz/twitter-clone.git",
+  "author": "aydinsanoz2@gmail.com",
+  "license": "MIT"
 }

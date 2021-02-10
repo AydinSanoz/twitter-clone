@@ -5,11 +5,12 @@ import {
 	FavoriteBorder,
 	Publish,
 } from '@material-ui/icons';
-import React from 'react';
+import React,{forwardRef} from 'react';
 import Avatar from './Avatar';
 import './Post.css';
 
-function Post({avatar, datetime,uid,name,slug,text,like,reply,retweet,tweet_img }) {
+const Post = forwardRef(
+	({avatar, datetime,uid,name,slug,text,like,reply,retweet,tweet_img }, ref)=>{
 	return (
 		<div className="post">
 			<div className="post-avatar">
@@ -41,6 +42,6 @@ function Post({avatar, datetime,uid,name,slug,text,like,reply,retweet,tweet_img 
 			</div>
 		</div>
 	);
-}
+})
 
 export default Post;
