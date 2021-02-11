@@ -5,6 +5,7 @@ import { FirebaseAuthContext } from '../context/AuthContext';
 
 function AppRouter() {
 	const { currentUser } = useContext(FirebaseAuthContext);
+	
 	console.log('current', currentUser);
 
 	return currentUser ? <Main /> : <Welcome />;
