@@ -9,10 +9,7 @@ function TweetBox() {
 	const [tweetMessage, setTweetMessage] = useState('');
 	const [tweetImage, setTweetImage] = useState('');
 	const { currentUser } = useContext(FirebaseAuthContext);
-	console.log(
-		'🚀 ~ file: TweetBox.js ~ line 12 ~ TweetBox ~ currentUser',
-		currentUser.photoURL
-	);
+
 	const userName = currentUser.email.split('@');
 	const db = firebase.db;
 

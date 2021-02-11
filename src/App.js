@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import AuthContextProvider from './context/AuthContext';
 import AppRouter from './Router/AppRouter';
-import WindowSize from './hooks/useWindowSize';
+import MainLayout from './Layouts/MainLayout';
 
 function App() {
+
 	return (
 		<div className="app">
 			<AuthContextProvider>
-				<WindowSize>
+
 					<AppRouter />
-				</WindowSize>
+
 			</AuthContextProvider>
 		</div>
 	);

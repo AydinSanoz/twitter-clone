@@ -14,7 +14,7 @@ function Feed() {
 		db.collection('posts')
 			.where('uid', '==', `${currentUser.uid}`)
 			.onSnapshot((snapshot) => {
-				console.log('snapshot', snapshot.docs);
+				// console.log('snapshot', snapshot.docs);
 				setPosts(snapshot.docs.map((doc) => doc.data()));
 			});
 	}, [currentUser.uid, db]);

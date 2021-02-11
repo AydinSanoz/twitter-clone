@@ -1,6 +1,6 @@
 
 .sidebar-main {
-	flex: 1;
+	/* flex: 1; */
 }
 .sidebar-twitterIcon {
 	color: var(--twitter-color);

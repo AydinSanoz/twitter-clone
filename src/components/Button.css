@@ -15,7 +15,7 @@
 }
 
 .fullButton {
-	width: 100% !important;
+	width: 100% ;
 	color: white !important;
 }
 
@@ -26,48 +26,17 @@
 
 .sidebar-button {
 	background-color: var(--twitter-color);
-	padding: 20px;
-	margin-right: 20px;
-	border-radius: 30px;
-	width: 95%;
-	outline: none;
-	font-weight: 900px;
-	font-size: medium;
-	border: none;
-	color: white;
-	text-transform: inherit;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-.sidebar-button:hover {
-	background-color: var(--twitter-background);
-	border-radius: 30px;
-	color: var(--twitter-color);
-	transition: color 100ms easy-out;
-}
-.sidebar-button:active {
-	background-color: var(--twitter-color);
-}
-.tweetBox-button {
-	width: 80px;
-	height: 40px;
-	background-color: var(--twitter-color);
-	border: none;
-	color: white;
-	border-radius: 30px;
-	text-transform: inherit;
-	font-weight: 900;
-	outline: none;
+    padding: 20px;
+    /* margin-right: 20px; */
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+    font-weight: 900px;
+    font-size: medium;
+    border: none;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+
 }
 
-@media screen and (max-width: 1260px) {
-	.sidebar-button {
-		border-radius: 50%;
-		width: 50px;
-		height: 50px;
-		align-self: center;
-	}
-	.sidebar-button:first-of-child {
-		display: none;
-	}
-}

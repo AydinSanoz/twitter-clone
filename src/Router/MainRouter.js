@@ -10,13 +10,16 @@ import Widgets from '../components/Widgets';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { FirebaseAuthContext } from '../context/AuthContext';
 import Welcome from './Welcome';
+import WindowSize from '../hooks/useWindowSize';
+import MainLayout from '../Layouts/MainLayout';
 
 function Main() {
 	const { currentUser } = useContext(FirebaseAuthContext);
-
+	console.log('window', WindowSize);
 	return (
 		<Router>
-			<Sidebar />
+			<MainLayout>
+				<Sidebar />
 			<Switch>
 				<Route exact path="/Home" component={currentUser ? Home : Welcome} />
 				<Route
@@ -37,6 +40,7 @@ function Main() {
 				<Route path="" component={Home} />
 			</Switch>
 			<Widgets />
+			</MainLayout>
 		</Router>
 	);
 }
