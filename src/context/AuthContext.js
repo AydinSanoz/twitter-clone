@@ -5,12 +5,6 @@ export const FirebaseAuthContext = createContext();
 
 function AuthContextProvider(props) {
 	const [currentUser, setCurrentUser] = useState('');
-	useEffect(() => {
-		effect;
-		return () => {
-			cleanup;
-		};
-	}, [input]);
 
 	useEffect(() => {
 		firebase.firebaseAuth.onAuthStateChanged((user) => setCurrentUser(user));

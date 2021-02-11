@@ -17,6 +17,7 @@ class Firebase {
 		this.db = this.firebaseApp.firestore()
 		this.firebaseAuth = this.firebaseApp.auth()
 	}
+	
 	// register registerWithEmailAndPassword
 	async register(displayName, email, password) {
 		try {
