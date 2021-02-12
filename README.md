@@ -41,6 +41,8 @@ https://twitterclone-d6669.web.app/
 
 - [Reactjs](https://reactjs.org/)
 - [Mateial-ui](https://material-ui.com/api/icon/)
+- [FlipMove](https://github.com/joshwcomeau/react-flip-move)
+- [react-twitter-embed](https://www.npmjs.com/package/react-twitter-embed)
 - [Firebase](https://firebase.google.com/)
 
 
