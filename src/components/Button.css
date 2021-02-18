@@ -1,35 +1,9 @@
-.button {
-	cursor: pointer;
-	background: transparent;
-	color: var(--twitter-color);
-	border-radius: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: var(--fade) all;
-}
-
-.button:hover {
-	color: var(--twitter-color);
-	background-color: var(--twitter-background);
-}
-
 .fullButton {
 	width: 100% ;
-	color: white !important;
-}
-
-.xlButton {
-	height: 49px !important;
-	min-width: 47px !important;
-}
-
-.sidebar-button {
 	background-color: var(--twitter-color);
-    padding: 20px;
+    padding: 1rem;
     /* margin-right: 20px; */
     border-radius: 30px;
-    width: 100%;
     outline: none;
     font-weight: 900px;
     font-size: medium;
@@ -37,6 +11,25 @@
     color: white;
     text-transform: inherit;
     margin-top: 20px;
-
 }
+.fullButton:hover {
+	color: var(--twitter-color);
+	background-color: var(--twitter-background);
+}
+
+.smButton {
+	/* min-width: 47px ; */
+	background-color: var(--twitter-color);
+    padding: 1rem;
+	color: white;
+	border-radius: 30px;
+	width: 20%;
+	border: none;
+	outline: none;
+}
+.smButton:hover {
+	color: var(--twitter-color);
+	background-color: var(--twitter-background);
+}
+
 

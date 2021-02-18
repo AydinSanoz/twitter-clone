@@ -20,26 +20,26 @@ function Main() {
 		<Router>
 			<MainLayout>
 				<Sidebar />
-			<Switch>
-				<Route exact path="/Home" component={currentUser ? Home : Welcome} />
-				<Route
-					exact
-					path="/Explore"
-					component={currentUser ? Explore : Welcome}
-				/>
-				<Route path="/Notifications" component={Error} />
-				<Route path="/Messages" component={Error} />
-				<Route path="/Bookmarks" component={Error} />
-				<Route path="/Lists" component={Error} />
-				<Route path="/Profile" component={Profile} />
-				<Route path="/Tweets" component={ProfileTweets} />
-				<Route path="/Tweets & Replies" component={ProfileError} />
-				<Route path="/Media" component={ProfileError} />
-				<Route path="/Likes" component={ProfileError} />
-				<Route path="/More" component={Error} />
-				<Route path="" component={Home} />
-			</Switch>
-			<Widgets />
+				<Switch>
+					<Route exact path="/Home" component={currentUser ? Home : Welcome} />
+					<Route
+						exact
+						path="/Explore"
+						component={currentUser ? Explore : Welcome}
+					/>
+					<Route path="/Notifications" component={Error} />
+					<Route path="/Messages" component={Error} />
+					<Route path="/Bookmarks" component={Error} />
+					<Route path="/Lists" component={Error} />
+					<Route path="/Profile" component={Profile} />
+					<Route path="/Tweets" component={ProfileTweets} />
+					<Route path="/Tweets & Replies" component={ProfileError} />
+					<Route path="/Media" component={ProfileError} />
+					<Route path="/Likes" component={ProfileError} />
+					<Route path="/More" component={Error} />
+					<Route path="" component={Home} />
+				</Switch>
+				<Widgets />
 			</MainLayout>
 		</Router>
 	);

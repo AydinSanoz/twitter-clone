@@ -25,3 +25,6 @@
 .avatar-img-large:hover{
 	filter: contrast(0.5);
 }
+.avatar-img-large:active{
+	filter: none;
+}

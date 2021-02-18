@@ -15,21 +15,24 @@ function TweetBox() {
 
 	const sendTweet = (e) => {
 		e.preventDefault();
-		db.collection('posts').add({
-			id: Math.random(),
-			uid: currentUser.uid,
-			name: currentUser.displayName,
-			slug: userName[0],
-			avatar_img: currentUser.photoURL,
-			datetime: new Date(),
-			text: tweetMessage,
-			tweet_img: tweetImage,
-			tweetInfo: {
-				reply: 12,
-				retweet: 120,
-				like: 20,
-			},
-		});
+		db.collection('posts')
+			.doc("tweets").collection(`${userName[0]}`)
+			.add({
+				id: Math.random(),
+				uid: currentUser.uid,
+				name: currentUser.displayName,
+				slug: userName[0],
+				avatar_img: currentUser.photoURL,
+				datetime: new Date(),
+				text: tweetMessage,
+				tweet_img: tweetImage,
+				tweetInfo: {
+					reply: 12,
+					retweet: 120,
+					like: 20,
+				},
+			});
+
 		setTweetMessage('');
 		setTweetImage('');
 	};
@@ -53,7 +56,7 @@ function TweetBox() {
 						value={tweetImage}
 						onChange={(e) => setTweetImage(e.target.value)}
 					/>
-					<Button className="tweetBox-button" onClick={sendTweet}>
+					<Button className="smButton" onClick={sendTweet}>
 						Tweet
 					</Button>
 				</div>

@@ -43,7 +43,7 @@ function Sidebar() {
 				<SidebarOption Icon={Lists} text="Lists" />
 				<SidebarOption Icon={Profile} text="Profile" />
 				<SidebarOption Icon={More} text="More" />
-				<Button className="sidebar-button" >
+				<Button className="fullButton" >
 					{/* <Tweet /> */}
 					<h4>Tweet</h4>
 				</Button>

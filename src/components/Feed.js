@@ -8,16 +8,18 @@ import FlipMove from 'react-flip-move';
 function Feed() {
 	const [posts, setPosts] = useState([]);
 	const { currentUser } = useContext(FirebaseAuthContext);
+	const userName = currentUser.email.split("@")
 	const db = firebase.db;
+	const refDoc = db.collection('posts').doc("tweets").collection(`${userName[0]}`)
+	console.log("refDoc", refDoc)
+
 
 	useEffect(() => {
-		db.collection('posts')
-			.where('uid', '==', `${currentUser.uid}`)
+		refDoc.orderBy("datetime", "desc")
 			.onSnapshot((snapshot) => {
-				// console.log('snapshot', snapshot.docs);
 				setPosts(snapshot.docs.map((doc) => doc.data()));
 			});
-	}, [currentUser.uid, db]);
+	}, []);
 	return (
 		<FeedLayout>
 			<FlipMove>
